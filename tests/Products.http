@@ -1,0 +1,16 @@
+### Submit Suppliers
+GET http://localhost:4004/odata/v4/catalog/Suppliers?$top=2
+
+### Browse Products
+GET http://localhost:4004/odata/v4/catalog/Products?$top=4
+
+### Browse Products - Product,Identifier ,Price
+GET http://localhost:4004/odata/v4/catalog/Products?$top=2&$select=identifier,price
+
+### Submit Products
+POST http://localhost:4004/odata/v4/catalog/Products
+Content-Type: application/json
+{
+    "ID":"1cfd38d3-4b55-4953-9fb4-4427f1097140",
+    "title": "Ram",
+}
